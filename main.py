@@ -212,6 +212,7 @@ def run_bot():
         try:
             bot.infinity_polling(timeout=60)
         except Exception as e:
+            print(e)
             time.sleep(3)
 
 if __name__ == "__main__":
