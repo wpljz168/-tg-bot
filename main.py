@@ -5,7 +5,7 @@ import time
 import uuid
 import os
 
-BOT_TOKEN = "8742859360:AAGe1GsXCX1cBzgHliFe8vUV0ZxJGg_stec"
+BOT_TOKEN = "BOT_TOKEN = "8742859360:AAHEB85cyMl_-k4B9ldovEog08NgU13qPLE""
 API_KEY = ""
 API_BASE = "https://api.eopen.io/api/v1/tron/energy"
 
