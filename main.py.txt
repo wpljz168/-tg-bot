@@ -1,0 +1,23 @@
+import telebot
+from flask import Flask
+import os
+
+BOT_TOKEN = "你的BotToken"
+bot = telebot.TeleBot(BOT_TOKEN)
+app = Flask(__name__)
+
+@bot.message_handler(commands=['start', 'help'])
+def send_welcome(message):
+    bot.reply_to(message, "✅ 机器人已上线！")
+
+@app.route('/')
+def index():
+    return "Bot is running!"
+
+def run_bot():
+    bot.polling(none_stop=True)
+
+if __name__ == "__main__":
+    import threading
+    threading.Thread(target=run_bot, daemon=True).start()
+    app.run(host="0.0.0.0", port=10000)
