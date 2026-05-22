@@ -1,2 +1,1 @@
-[deploy]
-startCommand = "python3 main.py"
+pyTelegramBotAPI==4.14.0
